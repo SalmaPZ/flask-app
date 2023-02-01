@@ -22,19 +22,10 @@ def hello_world():
     return "Hello World!"
 
 @app.route("/add-data", methods=["POST"])
-def add_task():
-    if not request.json:
-        return jsonify({
-            "status":"error",
-            "message": "Please provide the data!"
-        },400)
+//add code (refer step 1)
 
-    contact = {
-        'id': tasks[-1]['id'] + 1,
-        'Name': request.json['Name'],
-        'Contact': request.json.get('Contact', ""),
-        'done': False
-    }
+//add code(refer step 2)
+
     List.append(contact)
     return jsonify({
         "status":"success",
